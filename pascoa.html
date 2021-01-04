@@ -48,11 +48,13 @@
         } else if (campoResposta == 'dia' || campoResposta == 'Dia') {
             alert("A semelhança da semana em português é feira e não day.");
             document.getElementById('campoResposta').value = "";
+            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/pascoa");
             return false;
 
         } else {
             alert("Resposta errada!");
             document.getElementById('campoResposta').value = "";
+            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/pascoa");
             return false;
         }
     }

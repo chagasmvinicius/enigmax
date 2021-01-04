@@ -42,11 +42,13 @@
         } else if (campoResposta == 'Toucinho' || campoResposta == 'toucinho' || campoResposta == 'Bacon' || campoResposta == 'bacon') {
             alert("Parabéns! Mas ainda não é a resposta certa.");
             document.getElementById('campoResposta').value = "";
+            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/sem_nome");
             return false;
 
         } else {
             alert("Resposta errada!");
             document.getElementById('campoResposta').value = "";
+            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/sem_nome");
             return false;
         }
     }
