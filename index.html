@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<link href="estilo.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoName Riddle</title>
+</head>
+
+<body bgcolor="black">
+    <br><br><br><br><br><br><br><br>
+    <div align="center">
+        <h2 id="index">
+            Bem vindx ao NoName Riddle
+            <br><br>Vamos começar?
+        </h2>
+        <br><br>
+        <h2>Observe tudo.</h2>
+        <br><br><br><br><br><br>
+
+        <form name="respostaForm" onsubmit="return validarResposta()" method="post">
+            <input type="text" class="text" name="resposta">
+            <input type="submit" class="btn" value="Responder!">
+        </form>
+    </div>
+</body>
+<footer class="Rodape">Instagram: @viniciusmchagas @kaikbrumoficial</footer>
+<script>
+    function validarResposta() {
+        // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
+        var campoResposta = document.forms["respostaForm"]["resposta"].value;
+        if (campoResposta == "relogio" || campoResposta == "Sim" || campoResposta == 'sim' || campoResposta == 'yes' || campoResposta == 'Yes') {
+            window.location.replace("https://nonameriddle.000webhostapp.com/relogio.html");
+            return false;
+        } else {
+            alert("Sem resposta eu não prossigo.");
+            document.getElementById('campoResposta').value = "";
+            return false;
+        }
+    }
+</script>
+
+</html>

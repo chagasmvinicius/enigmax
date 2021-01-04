@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<link href="estilo.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>?</title>
+</head>
+
+<body bgcolor="black">
+    <br><br><br><br><br><br><br><br>
+    <div align="center">
+        <h2>
+            Um maior e outro menor, os dois fazem o mesmo percurso repetidas vezes e se
+            <br> encontram apenas algumas vezes durante o dia porque o menor acaba sendo 6x10
+            <br> vezes mais lento que o maior. Esses dois fazem parte de que?
+            <br><br><br><br><br><br><br><br>
+        </h2>
+        <form name="respostaForm" onsubmit="return validarResposta()" method="post">
+            <input type="text" class="text" name="resposta">
+            <input type="submit" class="btn" value="Responder!">
+        </form>
+    </div>
+</body>
+<footer class="Rodape">Instagram: @viniciusmchagas @kaikbrumoficial</footer>
+<script>
+    function validarResposta() {
+        // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
+        var campoResposta = document.forms["respostaForm"]["resposta"].value;
+        if (campoResposta == "relogio" || campoResposta == "Relogio" || campoResposta == 'relógio' || campoResposta == 'Relógio') {
+            window.location.replace("https://nonameriddle.000webhostapp.com/relogio.html");
+            return false;
+        } else {
+            alert("Resposta errada!");
+            document.getElementById('campoResposta').value = "";
+            return false;
+        }
+    }
+</script>
+
+</html>

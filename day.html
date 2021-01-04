@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+<html lang="pt">
+<link href="estilo.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inauguração</title>
+</head>
+
+<body bgcolor="black">
+    <br><br><br>
+    <div align="center">
+        <img src="10.png" width=1500 height=200>
+        <br><br><br><br>
+        <h2>z?</h2>
+        <br><br><br>
+        <form name="respostaForm" onsubmit="return validarResposta()" method="post">
+            <input type="text" class="text" name="resposta">
+            <input type="submit" class="btn" value="Responder!">
+        </form>
+    </div>
+</body>
+<footer class="Rodape">Instagram: @viniciusmchagas @kaikbrumoficial</footer>
+<script>
+    function validarResposta() {
+        // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
+        var campoResposta = document.forms["respostaForm"]["resposta"].value;
+        if (campoResposta == 'Mercúrio' || campoResposta == 'mercúrio' || campoResposta == 'Mercurio' || campoResposta == 'mercurio') {
+            window.location.replace("https://nonameriddle.000webhostapp.com/.html");
+            return false;
+
+        } else if (campoResposta == '80' || campoResposta == 'oitenta') {
+            alert("De qual elemento?");
+            document.getElementById('campoResposta').value = "";
+            return false;
+
+        } else {
+            alert("Resposta errada!");
+            document.getElementById('campoResposta').value = "";
+            return false;
+        }
+    }
+</script>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>inauguração</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="text-align: center">
+        <br><br><br><br><br><br><br>
+        <br><br><br> z?
+    </div>
+</body>
+
+</html>

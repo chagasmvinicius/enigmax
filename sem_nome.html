@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+
+<html lang="pt">
+<link href="estilo.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde fica?</title>
+</head>
+
+<body bgcolor="black">
+    <br><br><br>
+    <div align="center">
+        <img src="SEMNOME.png" width=630 height=388>
+        <br><br><br>
+
+        <form name="respostaForm" onsubmit="return validarResposta()" method="post">
+            <input type="text" class="text" name="resposta">
+            <input type="submit" class="btn" value="Responder!">
+            <br><br><br><br><br><br>
+            <p id="dica1">Observe tudo com MUITA atenção.</p>
+        </form>
+    </div>
+</body>
+<footer>
+    <p id="p1">Instagram:</p>
+    <li id="RodapeLink"><a href="https://www.instagram.com/nonameriddle/">@nonameriddle</a></li>
+    <p id="p2">@kaikbrumoficial</p>
+</footer>
+<script>
+    function validarResposta() {
+        // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
+        var campoResposta = document.forms["respostaForm"]["resposta"].value;
+        if (campoResposta == 'Barriga' || campoResposta == 'barriga') {
+            window.location.replace("https://nonameriddle.000webhostapp.com/.html");
+            return false;
+
+        } else if (campoResposta == 'Toucinho' || campoResposta == 'toucinho' || campoResposta == 'Bacon' || campoResposta == 'bacon') {
+            alert("Parabéns! Mas ainda não é a resposta certa.");
+            document.getElementById('campoResposta').value = "";
+            return false;
+
+        } else {
+            alert("Resposta errada!");
+            document.getElementById('campoResposta').value = "";
+            return false;
+        }
+    }
+</script>
+
+</html>
