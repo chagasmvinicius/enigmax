@@ -16,30 +16,13 @@
         <img src="3L4_3_0_54P0.png" width=500 height=500>
         <br><br><br>
 
-        <form name="respostaForm" onsubmit="return validarResposta()" method="post">
+        <form name="respostaForm" onsubmit="return validarRespostaRelogio()" method="post">
             <input type="text" class="text" name="resposta">
             <input type="submit" class="btn" value="Responder!">
         </form>
     </div>
 </body>
 <footer class="Rodape">Instagram: @viniciusmchagas @kaikbrumoficial</footer>
-<script>
-    function validarResposta() {
-        // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
-        var campoResposta = document.forms["respostaForm"]["resposta"].value;
-        if (campoResposta == 'Dr. Facilier' || campoResposta == 'Facilier') {
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/facilier");
-            return false;
-        } else if (campoResposta == 'facilier' || campoResposta == 'dr. facilier') {
-            alert("Cadê a gramática?");
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/relogio");
-            return false;
-        } else {
-            alert("Resposta errada!");
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/relogio");
-            return false;
-        }
-    }
-</script>
+<script type="text/javascript" src="validador.js"></script>
 
 </html>

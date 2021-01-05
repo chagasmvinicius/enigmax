@@ -30,30 +30,13 @@
             <br>
             <br> tasyruda <br><br><br><br><br><br>
         </h2>
-        <form name="respostaForm" onsubmit="return validarResposta()" method="post">
+        <form name="respostaForm" onsubmit="return validarRespostaPascoa()" method="post">
             <input type="text" class="text" name="resposta">
             <input type="submit" class="btn" value="Responder!">
         </form>
     </div>
 </body>
 <footer class="Rodape">Instagram: @viniciusmchagas @kaikbrumoficial</footer>
-<script>
-    function validarResposta() {
-        // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
-        var campoResposta = document.forms["respostaForm"]["resposta"].value;
-        if (campoResposta == 'day' || campoResposta == 'Day') {
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/day");
-            return false;
+<script type="text/javascript" src="validador.js"></script>
 
-        } else if (campoResposta == 'dia' || campoResposta == 'Dia') {
-            alert("A semelhança da semana em português é feira e não day.");
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/pascoa");
-            return false;
-
-        } else {
-            alert("Resposta errada!");
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/pascoa");
-            return false;
-        }
-    }
-</script>
+</html>

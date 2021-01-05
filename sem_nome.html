@@ -18,7 +18,7 @@
         <img src="SEMNOME.png" width=630 height=388>
         <br><br><br>
 
-        <form name="respostaForm" onsubmit="return validarResposta()" method="post">
+        <form name="respostaForm" onsubmit="return validarRespostaSemNome()" method="post">
             <input type="text" class="text" name="resposta">
             <input type="submit" class="btn" value="Responder!">
             <br><br><br><br><br><br>
@@ -27,25 +27,6 @@
     </div>
 </body>
 <footer class="Rodape">Instagram: @nonameriddle @kaikbrumoficial</footer>
-<script>
-    function validarResposta() {
-        // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
-        var campoResposta = document.forms["respostaForm"]["resposta"].value;
-        if (campoResposta == 'Barriga' || campoResposta == 'barriga') {
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/final");
-            return false;
-
-        } else if (campoResposta == 'Toucinho' || campoResposta == 'toucinho' || campoResposta == 'Bacon' || campoResposta == 'bacon') {
-            alert("Parabéns! Mas ainda não é a resposta certa.");
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/sem_nome");
-            return false;
-
-        } else {
-            alert("Resposta errada!");
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/sem_nome");
-            return false;
-        }
-    }
-</script>
+<script type="text/javascript" src="validador.js"></script>
 
 </html>

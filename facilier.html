@@ -17,32 +17,13 @@
         <iframe width="500" height="500" src="https://www.youtube.com/embed/pZsK-B5goqI" frameborder="0" autoplay="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br><br><br>
 
-        <form name="respostaForm" onsubmit="return validarResposta()" method="post">
+        <form name="respostaForm" onsubmit="return validarRespostaFacilier()" method="post">
             <input type="text" class="text" name="resposta">
             <input type="submit" class="btn" value="Responder!">
         </form>
     </div>
 </body>
 <footer class="Rodape">Instagram: @viniciusmchagas @kaikbrumoficial</footer>
-<script>
-    function validarResposta() {
-        // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
-        var campoResposta = document.forms["respostaForm"]["resposta"].value;
-        if (campoResposta == 'Ordep' || campoResposta == 'ordep' || campoResposta == 'ordeP') {
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/sem_nome");
-            return false;
-
-        } else if (campoResposta == 'Pedro' || campoResposta == 'pedro') {
-            alert("Missa Atnet");
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/facilier");
-            return false;
-
-        } else {
-            alert("Resposta errada!");
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/facilier");
-            return false;
-        }
-    }
-</script>
+<script type="text/javascript" src="validador.js"></script>
 
 </html>

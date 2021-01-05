@@ -18,26 +18,13 @@
             <br> vezes mais lento que o maior. Esses dois fazem parte de que?
             <br><br><br><br><br><br><br><br>
         </h2>
-        <form name="respostaForm" onsubmit="return validarResposta()" method="post">
+        <form name="respostaForm" onsubmit="return validarRespostaMercurio()" method="post">
             <input type="text" class="text" name="resposta">
             <input type="submit" class="btn" value="Responder!">
         </form>
     </div>
 </body>
 <footer class="Rodape">Instagram: @viniciusmchagas @kaikbrumoficial</footer>
-<script>
-    function validarResposta() {
-        // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
-        var campoResposta = document.forms["respostaForm"]["resposta"].value;
-        if (campoResposta == "relogio" || campoResposta == "Relogio" || campoResposta == 'relógio' || campoResposta == 'Relógio') {
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/relogio");
-            return false;
-        } else {
-            alert("Resposta errada!");
-            window.location.replace("https://viniciuschagas7.github.io/nonameenigma/mercurio");
-            return false;
-        }
-    }
-</script>
+<script type="text/javascript" src="validador.js"></script>
 
 </html>
