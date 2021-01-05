@@ -59,28 +59,22 @@ iframe {
     list-style: none;
 }
 
-#p1 {
-    width: 85.5%;
-    height: 5%;
-    font-size: 13px;
-    bottom: 0;
-    position: fixed;
-    text-align: center;
-    list-style: none;
-}
-
-#p2 {
-    width: 111%;
-    height: 5%;
-    font-size: 13px;
-    bottom: 0;
-    position: fixed;
-    text-align: center;
-    list-style: none;
-}
-
 #index {
     color: white;
-    font-size: 26px;
+    font-size: 19px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+    border: none;
+}
+
+.linkfinal {
+    color: white;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.linkfinal:hover {
+    color: #41b3ff;
 }
