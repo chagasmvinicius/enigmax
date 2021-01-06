@@ -54,6 +54,12 @@ iframe {
     color: black
 }
 
+#dica2 {
+    font-size: 7px;
+    text-align: center;
+    color: black
+}
+
 #RodapeLink {
     font-size: 13px;
     bottom: 0;
