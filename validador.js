@@ -120,7 +120,7 @@ function validarRespostaSemNome() {
     // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
     var campoResposta = document.forms["respostaForm"]["resposta"].value;
     if (campoResposta == 'Barriga' || campoResposta == 'barriga') {
-        window.location.replace("https://viniciuschagas7.github.io/enigmax/final");
+        window.location.replace("https://viniciuschagas7.github.io/enigmax/barriga");
         return false;
 
     } else if (campoResposta == 'Toucinho' || campoResposta == 'toucinho' || campoResposta == 'Bacon' || campoResposta == 'bacon') {
