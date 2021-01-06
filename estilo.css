@@ -78,3 +78,9 @@ iframe {
 .linkfinal:hover {
     color: #41b3ff;
 }
+
+.avisoinicial {
+    color: red;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
