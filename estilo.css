@@ -38,6 +38,11 @@ form {
     text-align: center;
 }
 
+.contador {
+    position: relative;
+    border: none;
+}
+
 img,
 iframe {
     border: white 2px solid;
