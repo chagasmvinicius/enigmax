@@ -38,11 +38,6 @@ form {
     text-align: center;
 }
 
-.contador {
-    position: relative;
-    border: none;
-}
-
 img,
 iframe {
     border: white 2px solid;
@@ -88,12 +83,6 @@ iframe {
 
 .linkfinal:hover {
     color: #41b3ff;
-}
-
-.avisoinicial {
-    color: red;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .redesSociais {
