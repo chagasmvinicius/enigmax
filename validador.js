@@ -172,3 +172,22 @@ function validarRespostaPedraFilosofal() {
         return false;
     }
 }
+
+function validarResposta129() {
+    // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
+    var campoResposta = document.forms["respostaForm"]["resposta"].value;
+    if (campoResposta == '1962') {
+        window.location.replace("https://viniciuschagas7.github.io/enigmax/final");
+        return false;
+
+    } else if (campoResposta == 'alcatraz' || campoResposta == 'ilha de alcatraz') {
+        alert("(x,y)");
+        window.location.replace("https://viniciuschagas7.github.io/enigmax/119");
+        return false;
+
+    } else {
+        alert("Resposta errada!");
+        window.location.replace("https://viniciuschagas7.github.io/enigmax/119");
+        return false;
+    }
+}
