@@ -158,7 +158,7 @@ function validarRespostaPedraFilosofal() {
     // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
     var campoResposta = document.forms["respostaForm"]["resposta"].value;
     if (campoResposta == '119') {
-        window.location.replace("https://viniciuschagas7.github.io/enigmax/final");
+        window.location.replace("https://viniciuschagas7.github.io/enigmax/119");
         return false;
 
     } else if (campoResposta == '129') {
@@ -173,7 +173,7 @@ function validarRespostaPedraFilosofal() {
     }
 }
 
-function validarResposta129() {
+function validarResposta119() {
     // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
     var campoResposta = document.forms["respostaForm"]["resposta"].value;
     if (campoResposta == '1962') {
