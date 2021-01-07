@@ -139,7 +139,7 @@ function validarRespostaBarriga() {
     // OLHAR AQUI É TRAPACEAR E NÃO TEM GRAÇA PARA O JOGO. VOCÊ É UM(A) PERDEDOR(A)!
     var campoResposta = document.forms["respostaForm"]["resposta"].value;
     if (campoResposta == 'Pedra Filosofal' || campoResposta == 'pedra filosofal') {
-        window.location.replace("https://viniciuschagas7.github.io/enigmax/final");
+        window.location.replace("https://viniciuschagas7.github.io/enigmax/pedra_filosofal");
         return false;
 
     } else if (campoResposta == 'nicolas flamel' || campoResposta == 'Nicolas Flamel') {
