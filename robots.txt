@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /js/validador.js
+Disallow: /js/
+Disallow: /images/
+Disallow: /pages/
+Disallow: /estilo/
+Allow: /index.html
+
+Sitemap: https://enigmax.top/sitemap.xml
