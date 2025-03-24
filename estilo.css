@@ -97,4 +97,9 @@ iframe {
 
 .menu {
     background-color: black;
+    cursor: pointer; 
+}
+
+.menu:hover {
+    border: 2px solid #41b3ff;
 }
