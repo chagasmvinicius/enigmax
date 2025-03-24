@@ -24,6 +24,10 @@ form {
     color: white;
 }
 
+.btn {
+    padding: 3px;
+}
+
 .btn:hover {
     border: 2px solid #41b3ff;
     color: #41b3ff;
